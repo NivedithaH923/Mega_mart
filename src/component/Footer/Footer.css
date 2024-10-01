@@ -1,0 +1,59 @@
+.footer {
+    background-color: rgb(240, 240, 240); /* Light color for the footer */
+    color: rgb(85, 4, 101); /* Text color */
+    padding: 40px 0; /* Added padding for more spacing */
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around; /* Space sections evenly */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about, .contact-us, .quick-links {
+    width: 30%; /* Adjust width to fit all sections in one line */
+  }
+  
+  .quick-links ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .quick-links li {
+    margin: 10px 0; /* Space between each link */
+  }
+  
+  .footer-links a {
+    color: rgb(85, 4, 101); /* Adjust link color */
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column; /* Stack contact items vertically */
+    align-items: flex-start; /* Align items to the left */
+    margin-bottom: 20px; /* Add space below contact info */
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center; /* Center icons with text */
+    margin: 5px 0; /* Space between contact items */
+  }
+  
+  .contact-icon {
+    margin-right: 10px; /* Space between icon and text */
+    color: rgb(85, 4, 101); /* Color for icons */
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  

@@ -1,0 +1,78 @@
+/* Centered text for the main section */
+.center-text {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 40px;
+  font-weight: bold;
+  color: #FFD700; /* Gold color */
+  letter-spacing: 1px;
+  font-family: 'Playfair Display', serif; /* Stylish font */
+}
+
+/* Styling for the Mega Sale section */
+.mega-sale {
+  width: 80%;
+  height: 300px;
+  display: flex; /* Corrected to flex */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  margin: 0 auto; /* Centers the container */
+  background-color: #f8f8f8; /* Optional background color */
+}
+
+/* Tab container row with light background, reduced height */
+.tab-row {
+  background-color: #f0f0f0; /* Light background color for the row */
+  padding: 10px 0; /* Reduced padding */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Margin at the bottom */
+  height: 80px; /* Control height */
+  align-items: center; /* Center vertically */
+}
+
+/* Tab header to align Categories and Sellers in the center */
+.tab-header {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Space between tabs */
+  width: 50%; /* Width of the tabs container */
+  text-align: center;
+  align-items: center; /* Ensure alignment */
+}
+
+/* Styling for each tab (Categories and Sellers) */
+.tab-header h1 {
+  cursor: pointer;
+  padding: 5px 20px; /* Padding for compactness */
+  border-radius: 5px;
+  transition: color 0.3s ease;
+  color: black;
+  font-size: 50px; /* Adjust font size for fitting */
+  margin: 0; /* Remove default margins */
+  display: inline-block; /* Ensure it stays inline */
+  height: 40px; /* Control height of h1 */
+  line-height: 40px; /* Align text vertically in the h1 */
+}
+
+/* Active tab styling */
+.tab-header h1.active {
+  color: rgb(85, 4, 101); /* Active tab text color */
+}
+
+/* Hover effect for tabs */
+.tab-header h1:hover {
+  color: rgb(85, 4, 101); /* Darker color on hover */
+}
+
+/* Inactive tabs have lower opacity */
+.tab-header h1:not(.active) {
+  opacity: 0.7;
+}
+
+/* Styling for the Mega Sale image */
+.mega-sale {
+  width: 100%;
+  height: 400;
+  margin: 20px 0;
+}

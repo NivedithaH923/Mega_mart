@@ -1,0 +1,55 @@
+/* Add styles for the login form */
+.login-form {
+    background-color: white; /* Solid background */
+    padding: 20px; /* Padding around the form */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for a better effect */
+    width: 300px; /* Width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    position: absolute; /* Use absolute positioning */
+    top: 50%; /* Center the form vertically */
+    right: 10%; /* Move the form to the right side of the page */
+    transform: translateY(-50%); /* Ensure true vertical centering */
+}
+  
+.login-form h2 {
+    margin-bottom: 10px; /* Reduced margin for tighter spacing */
+}
+  
+.login-form input {
+    width: 80%; /* Full width of the input */
+    padding: 10px; /* Reduced padding for smaller inputs */
+    margin: 8px 0; /* Reduced vertical margin between inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+.login-form button {
+    width: 80%; /* Full width of the button */
+    padding: 8px; /* Padding for the button */
+    background-color: #28a745; /* Button color */
+    color: white; /* Text color of the button */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* Pointer cursor on hover */
+}
+  
+.login-form button:hover {
+    background-color: #218838; /* Button color on hover */
+}
+
+/* Style the paragraph with smaller text */
+.small-text {
+    font-size: 12px; /* Small font size */
+    color: #333; /* Text color for the paragraph (optional) */
+}
+  
+/* Style the link inside the paragraph */
+.small-text a {
+    color: blue; /* Blue color for the link */
+    text-decoration: none; /* Removes the underline */
+}
+  
+.small-text a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

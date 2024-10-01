@@ -1,0 +1,139 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(85, 4, 101); /* Purple background */
+  color: #fff;
+  position: relative; /* Set relative positioning to anchor the dropdown */
+}
+
+.logo {
+  font-size: 34px;
+  font-weight: bold;
+  padding-left: 20px;
+  color: #fff; /* White text */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  letter-spacing: 2px; /* Spacing between letters */
+  transition: transform 0.2s ease-in-out; /* Smooth scale effect */
+}
+
+.logo:hover {
+  transform: scale(1.05); /* Slight enlargement on hover */
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4); /* Increased shadow on hover */
+}
+
+.search-bar {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align the icon and input vertically */
+  position: relative; /* Needed to position the search icon inside the input */
+}
+
+.search-input {
+  width: 10%;
+  padding: 8px 40px 8px 20px; /* Padding adjusted for the icon */
+  border: none;
+  border-radius: 4px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 85%; /* Adjust as needed to align the icon inside the input field */
+  font-size: 18px;
+  color: rgb(85, 4, 101);
+}
+
+.right-section {
+  display: flex;
+  gap: 30px; /* Adds space between Cart and Profile */
+}
+
+.icon-with-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff; /* White text color */
+  cursor: pointer;
+  position: relative; /* Required for dropdown menu positioning */
+}
+
+.icon {
+  font-size: 24px;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.label {
+  margin-top: 4px;
+  font-size: 14px;
+  text-align: center; /* Center the label text below the icon */
+}
+
+.icon-with-label:hover .icon {
+  color: #ff6f61; /* Change icon color to soft red on hover */
+}
+
+.icon-with-label:hover .label {
+  color: #ff6f61; /* Also change label color to soft red on hover */
+}
+
+/* Cart specific style to align label below the icon */
+.cart-link {
+  display: flex;
+  flex-direction: column; /* Places icon above the label */
+  align-items: center; /* Centers the icon and label horizontally */
+  text-decoration: none;
+  color: inherit; /* Keeps the default color of text and icon */
+}
+
+.cart-link:hover {
+  color: #007bff; /* Changes color on hover */
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  position: absolute;
+  top: 40px; /* Position below the header */
+  right: 0; /* Align it to the right of the Profile icon */
+  background-color: white;
+  color: #000;
+  width: 150px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: none; /* Hide dropdown by default */
+  z-index: 100; /* Ensure it's above other elements */
+}
+
+.icon-with-label:hover .dropdown-menu {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #000;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0; /* Light gray on hover */
+}
+
+.cart-link {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -15px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
